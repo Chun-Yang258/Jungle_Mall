@@ -1,4 +1,4 @@
-$(window).on('load', function(){
+var errorFunc = function(){
     let alert_messages = document.querySelectorAll('.alert-message');
     let alert_close_icons = document.querySelectorAll('.alert-message>.close');
     if(alert_messages){
@@ -34,4 +34,8 @@ $(window).on('load', function(){
 
 
     }
+}
+
+document.addEventListener("turbolinks:load", function() {
+    errorFunc();
 })
