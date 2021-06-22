@@ -1,0 +1,17 @@
+<% flash.each do |key, value| %>
+    <div class="alert-message alert-danger-message">
+        <span class="icon">
+            <i class="fa fa-close"></i>
+        </span>
+    
+        <div class="text">
+            <h4><strong>Opps!</strong></h4>
+            <p><%= value %></p>
+        </div>
+    
+        <button class="close">
+            <i class="fa fa-close"></i>
+        </button>
+    
+    </div>
+<% end %>

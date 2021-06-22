@@ -10,7 +10,9 @@ puts "Seeding Data ..."
 
 # Helper functions
 def open_asset(file_name)
+  # puts Rails.root.join('db', 'seed_assets', file_name) -> this gives full address
   File.open(Rails.root.join('db', 'seed_assets', file_name))
+  puts "Done"
 end
 
 # Only run on development (local) instances not on production, etc.
@@ -131,6 +133,5 @@ cat3.products.create!({
   quantity: 23,
   price: 2_483.75
 })
-
 
 puts "DONE!"
