@@ -12,6 +12,7 @@
 // Global
 body {
   padding-top: 70px;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 }
 
 // Bootstrap adjustments
@@ -24,7 +25,7 @@ form.button_to {
   padding: 0;
 }
 
-// error message
+// error message bar
 :root {
   --default: #b9b69a;
   --success: #51be56;
@@ -97,7 +98,6 @@ form.button_to {
   }
 }
 
-
 /* success alert start */
 .alert-success-message{
   background-color: var(--success);
@@ -106,7 +106,6 @@ form.button_to {
   }
 }
 /* success alert end */
-
 
 /* warning alert start */
 .alert-warning-message{
@@ -118,7 +117,6 @@ form.button_to {
 }
 /* warning alert end */
 
-
 /* danger alert start */
 .alert-danger-message{
   background-color: var(--danger);
@@ -128,7 +126,6 @@ form.button_to {
   }
 }
 /* danger alert end */
-
 
 /* primary alert start */
 .alert-primary-message{

@@ -10,6 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//
+// ** add the event listener to document, so when every page renders, the javascript file will also refresh
+// ** This solves some animation added to certain node in certian page, and if you go to other page, 
+// ** that event listener lost.
+//
+//
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
