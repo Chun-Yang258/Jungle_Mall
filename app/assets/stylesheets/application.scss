@@ -8,11 +8,13 @@
 // App
 @import "products";
 @import "sessions";
+@import "navbar";
 
 // Global
 body {
-  padding-top: 70px;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) no-repeat;
+  background-size: 400%, 400%;
+  animation: bkchange 20s ease-in-out infinite;
 }
 
 // Bootstrap adjustments
@@ -136,3 +138,16 @@ form.button_to {
   }
 }
 /* primary alert end */
+
+// background animation
+@keyframes bkchange {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}

@@ -1,0 +1,26 @@
+.navbar-custom{
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+
+nav{
+    padding: 0 15px;
+}
+
+.navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+
+.header .container a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: #23527c;
+        text-decoration: underline;
+    }
+}
+
+.dropdown-menu > li > a{
+    color: #f5f5f5;
+}
