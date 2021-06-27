@@ -1,17 +1,48 @@
 <% flash.each do |key, value| %>
-    <div class="alert-message alert-danger-message">
-        <span class="icon">
-            <i class="fa fa-close"></i>
-        </span>
-    
-        <div class="text">
-            <h4><strong>Opps!</strong></h4>
-            <p><%= value %></p>
+    <% if key == "error" %>
+        <div class="alert-message alert-danger-message">
+            <span class="icon" style="border: 1px solid white;">
+                <i class="fa fa-close"></i>
+            </span>
+        
+            <div class="text">
+                <h4><strong>Opps!</strong></h4>
+                <p><%= value %></p>
+            </div>
+        
+            <button class="close">
+                <i class="fa fa-close"></i>
+            </button>   
         </div>
-    
-        <button class="close">
-            <i class="fa fa-close"></i>
-        </button>
-    
-    </div>
+    <% elsif key == "success" %>
+        <div class="alert-message alert-success-message">
+            <span class="icon" style="border: 1px solid white;">
+                <i class="fa fa-check"></i>
+            </span>
+        
+            <div class="text">
+                <h4><strong>Congrats!</strong></h4>
+                <p><%= value %></p>
+            </div>
+        
+            <button class="close">
+                <i class="fa fa-close"></i>
+            </button>   
+        </div>
+    <% else %>
+        <div class="alert-message alert-warning-message">
+            <span class="icon" style="border: 1px solid white;">
+                <i class="fa fa-exclamation"></i>
+            </span>
+        
+            <div class="text">
+                <h4><strong>Attention:</strong></h4>
+                <p><%= value %></p>
+            </div>
+        
+            <button class="close">
+                <i class="fa fa-close"></i>
+            </button>   
+        </div>
+    <% end %>
 <% end %>

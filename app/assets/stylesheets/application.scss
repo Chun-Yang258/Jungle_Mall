@@ -10,12 +10,16 @@
 @import "products";
 @import "sessions";
 @import "navbar";
+@import "admin/cart";
+@import "admin/products";
 
 // Global
 body {
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) no-repeat;
   background-size: 400%, 400%;
   animation: bkchange 20s ease-in-out infinite;
+  min-height: 100vh;
+  
 }
 
 // Bootstrap adjustments
@@ -31,7 +35,7 @@ form.button_to {
 // error message bar
 :root {
   --default: #b9b69a;
-  --success: #51be56;
+  --success: rgba(81, 190, 86, 0.8);
   --warning: #ffc107;
   --danger: #ff5722;
   --primary: #29b6f6;
@@ -150,5 +154,11 @@ form.button_to {
   }
   100%{
     background-position: 0 50%;
+  }
+}
+
+@media (max-width: 530px){
+  body{
+    animation: none;
   }
 }

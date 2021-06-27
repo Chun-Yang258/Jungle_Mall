@@ -1,7 +1,7 @@
-<section class="admin-products-new">
+<section class="admin-products-edit">
 
   <header class="page-header">
-    <h1>Admin &raquo; New Product</h1>
+    <h1>Admin &raquo; Edit Product</h1>
   </header>
 
   <div class="row">
@@ -21,7 +21,7 @@
         <div class="admin-product-wrapper">
             <div class="image-content">
                 <div class="form-group">
-                    <%= image_tag "empty_image.jpg" %>
+                    <%= image_tag @product.image.thumb %>
                     <%= form.file_field :image, :onchange => "previewFile();" %>
                 </div>
             </div>
@@ -53,10 +53,10 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="submit-btn">
-          <%= form.submit 'Create Product', class: 'btn btn-primary' %>
-          <%= link_to 'Cancel', [:admin, :products], class: 'btn btn-danger' %>
+            <%= form.submit 'Update Product', class: 'btn btn-primary' %>
+            <%= link_to 'Cancel', [:admin, :products], class: 'btn btn-danger' %>
         </div>
       <% end %>
     </div>

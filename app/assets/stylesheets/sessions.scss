@@ -1,7 +1,7 @@
 main section.authentication-container{
     position: relative;
     width: 100%;
-    min-height: 94vh;
+    min-height: 100vh;
     background-color: #fff;
     overflow: hidden;
 
@@ -284,7 +284,7 @@ main section.authentication-container{
             grid-template-rows: 1fr 2fr 1fr;
 
             .right-panel .content, .right-panel .image{
-                transform: translateX(300px);
+                transform: translateX(500px);
             }
 
             .login-panel{

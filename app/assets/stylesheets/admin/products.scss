@@ -1,0 +1,69 @@
+main section.admin-products-index{
+    margin: 25px;
+    padding-top: 30px;
+
+    .panel-custom{
+        background: rgba(255, 255, 255, 0.5);
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .products{
+        min-width: 540px;
+    }
+
+    .custom-edit-btn{
+        padding: 6px 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .btn{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    img{
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+main section.admin-products-edit,
+.admin-products-new{
+    padding-top: 35px;
+
+    img{
+        max-width: 250px;
+    }
+
+    .admin-product-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .info-content{
+            width: 45vw;
+
+            textarea{
+                line-height: 25px;
+                height: 15vh;
+            }
+        }
+    }
+
+    .submit-btn{
+        text-align: center;
+        left: auto;
+        right: auto;
+        margin-top: 20px;
+
+        input{
+            margin-right: 10px;
+        }
+    }
+}
+
+
